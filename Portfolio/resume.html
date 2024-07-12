@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <style>
+        .resume{
+            width: 50%;
+            height: 750px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .btn{
+            line-height: 2;
+            font-size: 20px;
+            width: 150px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            border: none;
+        }
+        .btn:hover{
+            background-color: goldenrod;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        header {
+            background-color: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 2em 0;
+            position: relative;
+        }
+        .header-content h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 75%;
+            object-fit: cover;
+            position: absolute;
+            top: 40px;
+            left: 75px;
+            border: 3px solid #ffffff;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            justify-content: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            padding: 15px 15px;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ff6347;
+        }
+        .section-content {
+            background-color: white;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            width: 70%;
+        }
+        .section-content h2 {
+            font-size: 2rem;
+            margin-top: 0;
+        }
+        .section-content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .project-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .pro-section, .interns-section {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        .pro-section .pro-image, .interns-section .interns-image {
+            margin-left: 20px;
+        }
+        .pro-image img, .interns-image img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        dl dt {
+            padding: 5px 5px;
+        }
+        dl dd {
+            padding: 5px 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="img.jpg" alt="Profile Pic" class="profile-pic">
+            <h1>Purna Tejitha Daggubati</h1>
+            <p>Passionate Data Engineer</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="profile.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+    </nav><br><br>
+    <center><img src="resume.jpg" alt="Resume Pic" class="resume"><br><br>
+        <a href="resume.pdf" download="resume.pdf">
+            <button class="btn" onclick="alert('Do you want to download resume')">Download</button>
+        </a></center><br><br>
+    <footer>
+        <p>&copy; 2024 PURNA TEJITHA</p>
+    </footer>  
+</body>
+</html>
